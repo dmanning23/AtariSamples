@@ -37,7 +37,7 @@
         pha             ; push hi byte
         tya             ; Y -> A
         pha             ; push lo byte
-        lda $1FF4,x     ; do the bank switch <--- VERY IMPORTANT for 16k games! To do a 32k game, map to 1FF4
+        lda $1FF4,x     ; do the bank switch: F4 for a 32k game
         rts             ; return to target
     ENDM
 
