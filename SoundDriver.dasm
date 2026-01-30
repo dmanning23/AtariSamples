@@ -1,0 +1,13 @@
+;To use the atari-sound-editor sound driver:
+
+;Create your sound effects at atari-sound-editor.vercel.app
+;Export the assembly file and include it at the bottom of your code section
+
+;Include this file in your Variables section for the variables used by sound effect driver
+SFX_LEFT .byte
+SFX_RIGHT .byte
+SFX_LEFT_TIMER .byte
+SFX_RIGHT_TIMER .byte
+TempWord .word
+
+;The exported assembly file has instructions how to use it included in the file.
