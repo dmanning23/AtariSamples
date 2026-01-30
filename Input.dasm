@@ -156,7 +156,7 @@ UpdateInput subroutine
 
 ;To check input with debouncing:
 
-;CheckButtonAttack 
+;CheckButtonAttack subroutine
     ;;check for the button press
     ;lda p1Input,y ;is the button currently held?
     ;bit CONTROLLER_BUTTON
