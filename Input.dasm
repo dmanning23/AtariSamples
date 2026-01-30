@@ -1,24 +1,24 @@
 ;This will be required in the Constants section of your game:
 
-;;The input flags are as follows:
-;CONTROLLER_DOWN     equ #%00000001
-;CONTROLLER_UP       equ #%00000010
-;CONTROLLER_LEFT     equ #%00000100
-;CONTROLLER_RIGHT    equ #%00001000
-;CONTROLLER_BUTTON   equ #%00010000
+; ;The input flags are as follows:
+; CONTROLLER_DOWN     equ #%00000001
+; CONTROLLER_UP       equ #%00000010
+; CONTROLLER_LEFT     equ #%00000100
+; CONTROLLER_RIGHT    equ #%00001000
+; CONTROLLER_BUTTON   equ #%00010000
 
 ;This will be required in the Variables section of your game:
 
-;The player's input from the previous frame
-;p1PrevInput byte
-;p2PrevInput byte
+; ;The player's input from the previous frame
+; p1PrevInput byte
+; p2PrevInput byte
 
-;The player's input from the current frame
-;p1Input byte
-;p2Input byte
+; ;The player's input from the current frame
+; p1Input byte
+; p2Input byte
 
-;This variable is used to mask the controller input to map to p1 or p2
-;controllerMask .byte 
+; ;This variable is used to mask the controller input to map to p1 or p2
+; controllerMask .byte 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
