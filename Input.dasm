@@ -31,6 +31,7 @@ InitializeInput
     sta p2PrevInput
     sta p1Input
     sta p2Input
+    rts
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -71,7 +72,7 @@ UpdateInput subroutine
 
     ;set the down flag for the current input
     lda p1Input,y
-    ora #controllerDown
+    ora #CONTROLLER_DOWN
     sta p1Input,y
 
 .CheckUp
@@ -125,7 +126,7 @@ UpdateInput subroutine
 .checkP2Button
     lda #%10000000 ;Check if the button is pressed on the second controller
     bit INPT5
-    beq SetButtonFlag
+    beq .setButtonFlag
     jmp .DoneCheckingInput
 
 .setButtonFlag
@@ -135,6 +136,7 @@ UpdateInput subroutine
     sta p1Input,y
 
 .DoneCheckingInput
+    rts
 
 ;Now to check if a direction is being held, do something like:
 
