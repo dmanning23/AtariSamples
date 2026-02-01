@@ -1,0 +1,9 @@
+
+;playerYPos .byte
+;playerYVel .byte
+
+;add velocity to position
+CLC ; Clear carry before addition
+LDA playerYPos
+ADC playerYVel ; Add signed velocity (works for both positive and negative)
+STA playerYPos
