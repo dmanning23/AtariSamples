@@ -72,7 +72,7 @@ SetPlayerPosRightEdge
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 SetPlayerPosCeiling
-    lda #SCREEN_TOP_EDGE-1
+    lda #SCREEN_TOP_EDGE-2
     sta playerYPos,y
     rts
 
@@ -83,7 +83,7 @@ SetPlayerPosCeiling
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 SetPlayerPosFloor
-    lda #SCREEN_BOTTOM_EDGE+1
+    lda #SCREEN_BOTTOM_EDGE+2
     sta playerYPos,y
     rts
 
