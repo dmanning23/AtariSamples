@@ -1,9 +1,23 @@
-
+;playerXPos .byte
 ;playerYPos .byte
+;playerXVel .byte
 ;playerYVel .byte
 
-;add velocity to position
-CLC ; Clear carry before addition
-LDA playerYPos
-ADC playerYVel ; Add signed velocity (works for both positive and negative)
-STA playerYPos
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; Update the 
+; Y = player number (0 for p1, 1 for p2)
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+UpdateCharacterPosition
+    ;add velocity to position
+    clc ; Clear carry before addition
+    lda playerXPos,y
+    adc playerXVel,y ; Add signed velocity (works for both positive and negative)
+    sta playerXPos,y
+
+    clc
+    lda playerYPos,y
+    adc playerYVel,y
+    sta playerYPos,y
+    rts
