@@ -106,7 +106,7 @@ CenterPlayerX
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 CenterPlayerY
-    lda #SCREEN_BOTTOM_EDGE
+    lda #SCREEN_TOP_EDGE
     lsr ;divide by 2
     sta playerYPos,y ;center vertically
     rts
